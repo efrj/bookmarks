@@ -7,6 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
+    "copy-bootstrap": "cp -R node_modules/bootstrap/dist/* public/bootstrap",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -22,7 +23,9 @@
   "dependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
-    "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/platform-express": "^9.4.1",
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
     "hbs": "^4.2.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
